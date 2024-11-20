@@ -18,6 +18,11 @@ jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
+      - name: tags
+        uses: SOLIDSoftworks/semver-tags@v1.5.3
+        with:
+          tag-prefix: 'v'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -28,10 +33,6 @@ jobs:
           go-version: stable
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
-      - name: tags
-        uses: SOLIDSoftworks/semver-tags@v1.5.3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
         with:
