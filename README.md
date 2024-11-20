@@ -13,7 +13,7 @@
 Download the prebuilt binary for your platform or install using Go:
 
 ```bash
-go install github.com/your-repo/basemark@latest
+go install github.com/shabinesh/basemark@latest
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ basemark [global options] command [command options]
 Run a benchmark with 10 iterations, an acceptance time of 500ms, and a 5% variance threshold:
 
 ```bash
-basemark -n 10 -t 500 -v 5
+basemark -n 10 -t 500 -v 5 sleep 2
 ```
 
 ### Output
