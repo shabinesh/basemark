@@ -2,6 +2,8 @@
 
 **Basemark** is a CLI benchmarking tool designed for use in Continuous Integration (CI) environments. It allows you to measure performance metrics over multiple iterations and verify them against predefined acceptance criteria.
 
+[![SLSA Go releaser](https://github.com/shabinesh/basemark/actions/workflows/go-ossf-slsa3-publish.yml/badge.svg)](https://github.com/shabinesh/basemark/actions/workflows/go-ossf-slsa3-publish.yml)
+
 ## Features
 - **Iteration-based Testing**: Run a specific number of iterations to assess performance consistency.
 - **Acceptance Criteria**: Validate performance against a target acceptance time.
