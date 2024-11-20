@@ -1,4 +1,4 @@
-module basemark
+module github.com/shabinesh/basemark
 
 go 1.23.2
 
